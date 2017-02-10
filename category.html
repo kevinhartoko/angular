@@ -1,0 +1,172 @@
+<html ng-app="store">
+<head>
+	<title>Category</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="Container">
+		<div class="Content">
+			<div class="Header">
+				<img src="logo.jpg" style="padding-left:100px;">
+				<span>Next Generation E-Commerce</span>
+			</div>
+			<div class="Navigation">
+				<nav>
+					<form action="" method="get">
+						<a href="category.html" style="padding-left:200px;">Category</a>
+						<a href="#" style="padding-right:50%;">Cart</a>
+    					<input type="text" name="search"/>
+        				<input type="submit" value="Search"/>
+ 					</form>
+				</nav>
+			</div>
+			<div class="Category" ng-init="tab=1">
+				<ul>
+					<h2>Category:</h2>
+					<li ng-class="{active:tab===1}"><a href ng-click="tab=1">Elektronik</a></li>
+					<li ng-class="{active:tab===2}"><a href ng-click="tab=2">Pakaian</a></li>
+					<li ng-class="{active:tab===3}"><a href ng-click="tab=3">Handphone</a></li>
+					<li ng-class="{active:tab===4}"><a href ng-click="tab=4">Jam Tangan</a></li>
+				</ul>
+			</div>
+			<div class="CategoryDetail" ng-show="tab===1">
+				<table>
+					<tr>
+						<td>
+							<div class="CategoryImage">
+								<img src="image/keyboard.jpg" style="height:120px;">
+							</div>
+						</td>
+						<td>
+							<b>Elektronik</b><br><br>
+							Category Detail Elektronik<br>
+							Category Detail Elektronik<br>
+							Category Detail Elektronik<br>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="CategoryDetail" ng-show="tab===2">
+				<table>
+					<tr>
+						<td>
+							<div class="CategoryImage">
+								<img src="image/baju.jpg" style="height:120px;">
+							</div>
+						</td>
+						<td>
+							<b>Pakaian</b><br><br>
+							Category Detail Pakaian<br>
+							Category Detail Pakaian<br>
+							Category Detail Pakaian<br>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="CategoryDetail" ng-show="tab===3">
+				<table>
+					<tr>
+						<td>
+							<div class="CategoryImage">
+								<img src="image/samsung.jpg" style="height:120px;">
+							</div>
+						</td>
+						<td>
+							<b>Handphone</b><br><br>
+							Category Detail Handphone<br>
+							Category Detail Handphone<br>
+							Category Detail Handphone<br>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="CategoryDetail" ng-show="tab===4">
+				<table>
+					<tr>
+						<td>
+							<div class="CategoryImage">
+								<img src="image/casio.jpg" style="height:120px;">
+							</div>
+						</td>
+						<td>
+							<b>Jam Tangan</b><br><br>
+							Category Detail Jam Tangan<br>
+							Category Detail Jam Tangan<br>
+							Category Detail Jam Tangan<br>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="ItemContainer" ng-controller="StoreController as store">
+				<table>
+					<tr>
+						<td>
+							<div class="Item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item1<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+						<td>
+							<div class="item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item2<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+						<td>
+							<div class="item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item3<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<<div class="item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item4<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+						<td>
+							<div class="item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item5<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+						<td>
+							<div class="item">
+	                    		<img src="test.jpg" /><br>
+	                    		Show : Item6<br>
+	                    		Category : <br>
+	                    		More : <a href="product.html">More</a><br>
+	                   	 		Price = Rp<br />
+                   	 		</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</body>
+</html>
